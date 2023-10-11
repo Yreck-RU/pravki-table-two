@@ -1,0 +1,479 @@
+.tariff2-main {
+	background: #F0F2F7;
+	padding: 0 15px 20px;
+	position: relative;
+	z-index: 1;
+}
+
+.tariff2-main::before {
+	content: "";
+	position: absolute;
+	top: -94px;
+	left: 0;
+	width: 100%;
+	height: calc(100% + 94px);
+	background-color: #f0f2f7;
+	z-index: -1;
+	pointer-events: none;
+}
+
+.tariff2-main__title {
+	color: #323b6a;
+	margin-bottom: 12px;
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: 0.01em;
+}
+
+.tariff2-main__edit {
+	font-size: 18px;
+	color: #427ab1;
+	letter-spacing: 0.01em;
+}
+
+.tariff2-main__edit:visited {
+	color: #427ab1;
+}
+
+.tariff2-main__balance {
+	margin-top: 28px;
+	background: #FFFFFF;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 0 8px 0 rgba(50, 59, 106, 0.2);
+	box-shadow: 0 0 8px 0 rgba(50, 59, 106, 0.2);
+	padding: 15px 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	font-size: 18px;
+	letter-spacing: 0.01em;
+	color: #323B6A;
+}
+
+.tariff2-main__balance-btn {
+	margin-left: 24px;
+	max-width: 180px;
+	width: 100%;
+	height: 35px;
+}
+
+.tariff2-main__balance-text {
+	font-weight: 700;
+}
+
+.table-tariff2-head {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1.2;
+	letter-spacing: 1.05px;
+	color: #ffffff;
+	padding: 10px;
+	background: #323B6A;
+}
+
+.table-tariff-column {
+	padding: 20px 0 30px;
+}
+
+.table-tariff-column .table-tariff-wrap {
+	margin-bottom: 20px;
+}
+
+.table-tariff-column .table-tariff-wrap:last-child {
+	margin-bottom: 0;
+}
+
+.table-tariff2-result {
+	border-top: 2px solid #323B6A;
+	padding: 18px 15px 40px;
+	color: #323B6A;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 0.01em;
+}
+
+.table-tariff2 {
+	width: 100%;
+	font-size: 14px;
+}
+
+.table-tariff2__bold {
+	font-weight: 700;
+}
+
+.table-tariff2 th {
+	border-bottom: 1px solid #323B6A;
+}
+
+.table-tariff2 th,
+.table-tariff2 td {
+	padding: 17px 10px;
+}
+
+.table-tariff2 td {
+	border-bottom: 1px solid rgba(50, 59, 106, 0.3);
+}
+
+.table-tariff2 tr:last-child td {
+	border-bottom: none;
+	padding-top: 17px;
+	padding-bottom: 17px;
+}
+
+.table-tariff2 tbody td {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.table-tariff2 tbody .table-tariff2__item {
+	padding-top: 17px;
+	padding-bottom: 17px;
+}
+
+.table-tariff2__more td {
+	padding: 0;
+}
+
+.table-tariff2__show-all {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding: 20px 10px;
+	cursor: pointer;
+	font-size: 14px;
+	color: #337AB7;
+	-webkit-transition: .2s;
+	transition: .2s;
+}
+
+.table-tariff2__show-all i {
+	margin-left: 8px;
+}
+
+.table-tariff2__show-all:hover {
+	color: #323B6A;
+}
+
+.table-tariff2__show-all-active {
+	display: none;
+}
+
+.table-tariff2._show .table-tariff2__show-all-default {
+	display: none;
+}
+
+.table-tariff2._show .table-tariff2__show-all-active {
+	display: block;
+}
+
+.table-tariff2__hidden .table-tariff2__item {
+	display: none;
+}
+
+.table-tariff2:not(._show) .table-tariff2__hidden td {
+	border-width: 0;
+}
+
+@media only screen and (max-width: 767px) {
+	.table-tariff-column {
+		padding-bottom: 70px;
+	}
+
+	.tariff2-main__title {
+		margin-bottom: 8px;
+		font-size: 16px;
+	}
+
+	.tariff2-main__edit {
+		font-size: 14px;
+	}
+
+	.tariff2-main__balance {
+		margin-top: 12px;
+		padding: 10px;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+	.tariff2-main__balance-info {
+		width: 100%;
+		font-size: 14px;
+	}
+
+	.tariff2-main__balance-btn {
+		margin: 10px 0 0;
+	}
+
+	.table-tariff2 thead {
+		display: none;
+	}
+
+	.table-tariff2 td {
+		padding-top: 12px;
+		padding-bottom: 12px;
+		display: block;
+		width: 100%;
+	}
+
+	.table-tariff2 tbody .table-tariff2__item {
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+
+	.table-tariff2__item {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+
+	.table-tariff2__item_label::before {
+		content: attr(data-label);
+		font-weight: 700;
+	}
+
+	.table-tariff2__item-inner {
+		display: block;
+		text-align: right;
+	}
+
+	.table-tariff2__more td {
+		padding: 0;
+	}
+
+	.table-tariff2__more td:first-child {
+		border-top: none !important;
+	}
+
+	.table-tariff2__show-all {
+		padding: 16px 10px;
+	}
+
+	.table-tariff2 tr td:first-child {
+		border-top: 1px solid #333333;
+	}
+
+	.table-tariff2 tr:last-child td {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+
+	.table-tariff2 tr:last-child td:first-child {
+		border-top: none !important;
+	}
+
+	.table-tariff2-result {
+		position: fixed;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		padding: 16px 15px 20px;
+		margin: 0;
+		background: #fff;
+		border: none;
+		font-size: 18px;
+		-webkit-box-shadow: 0 0 8px rgba(50, 59, 106, 0.2);
+		box-shadow: 0 0 8px rgba(50, 59, 106, 0.2);
+	}
+}
+
+/*==================================*/
+
+.tariff-footer {
+	font-size: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.tariff-paginaton {
+	font-size: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.tariff-paginaton__item {
+	height: 40px;
+	min-width: 40px;
+	border: 1px solid #323b6a;
+	border-right: 0.5px solid #323b6a;
+	border-left: 0.5px solid #323b6a;
+
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 15px;
+	color: #323b6a !important;
+	text-decoration: none !important;
+}
+
+.tariff-paginaton__item.active {
+	background-color: rgba(51, 121, 183, 0.15) !important;
+	pointer-events: none;
+}
+
+.tariff-paginaton__item:first-child img {
+	transform: rotate(180deg);
+}
+
+.tariff-paginaton__item:first-child {
+	/*border-radius: 4px 0 0 4px;*/
+}
+
+.tariff-paginaton__item:last-child {
+	border-left: 1px solid #323b6a;
+	*/
+	/*border-radius: 0 4px 4px 0*/
+}
+
+.tariff-paginaton__item img {
+	height: 10px;
+}
+
+
+.tariff-select {
+	max-width: 100%;
+}
+
+.tariff-select .dropdown-menu {
+	top: auto;
+	bottom: 100%;
+	width: 100%;
+	transition: all 0.3s ease 0s;
+	display: block !important;
+	pointer-events: none;
+	opacity: 0;
+	transform: translateY(12px);
+	border: 2px solid #d1daf3;
+	border-bottom: 0px solid #fff;
+}
+
+.tariff-select .dropdown-toggle {
+	/*padding-right: 0;
+  padding-left: 0;*/
+	background: #F0F2F7;
+	z-index: 1001;
+	position: relative;
+}
+
+.tariff-select.open .dropdown-toggle {
+	background: #d1daf3 !important;
+	opacity: 1 !important;
+}
+
+
+.tariff-select.open .dropdown-menu {
+	opacity: 1 !important;
+	pointer-events: auto;
+	transform: translateY(0px);
+}
+
+.tariff-select.open .caret {
+	transform: rotate(-45deg);
+	margin-top: 3px;
+}
+
+.tariff-select .caret {
+	transition: all 0.3s ease 0s;
+}
+
+
+.tariff-select * {
+	font-size: 14px;
+	color: #323b6a !important;
+}
+
+/*====================*/
+.tariff-header {
+	margin-top: 0;
+}
+
+.tariff-header .mortgage-main__text {
+	color: #323b6a;
+	margin-bottom: 6px;
+	font-size: 21px;
+	line-height: 100%;
+	text-align: left !important;
+	font-weight: bold;
+}
+
+.tariff-header .calc-mortgage-new__label {
+	margin-bottom: 0px;
+	font-size: 14px;
+	line-height: 1.29;
+	letter-spacing: 0.14px;
+}
+
+
+.table-tariff2.table-tariff2_no-last-pading tr:last-child td {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.table-tariff2.table-tariff2_no-last-pading .table-tariff2-head th {
+	border: 0px solid #000;
+}
+
+@media screen and (min-width: 1064px) {
+
+	.tariff-select .dropdown-toggle,
+	.tariff-paginaton__item {
+		transition: all 0.3s ease 0s;
+	}
+
+	.tariff-select .dropdown-toggle:hover {
+		background: #dfe5f4;
+	}
+
+	.tariff-paginaton__item:hover {
+		background: #F0F2F7;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.tariff-footer {
+		display: block;
+	}
+
+	.tariff-select {
+		margin-top: 12px;
+	}
+
+	.tariff-header .mortgage-main__text {
+		margin-bottom: 4px;
+		font-size: 19px;
+	}
+
+	.table-tariff2.table-tariff2_no-last-pading a.table-tariff2__item-inner {
+		max-width: 35vw;
+		overflow: hidden;
+		white-space: nowrap;
+		position: relative;
+	}
+
+	.table-tariff2.table-tariff2_no-last-pading a.table-tariff2__item-inner:after {
+		content: "...";
+		position: absolute;
+		right: 0;
+		top: 0;
+		background: #fff;
+		padding-left: 2px;
+	}
+}
